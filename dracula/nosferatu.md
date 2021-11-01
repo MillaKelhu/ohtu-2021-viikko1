@@ -1,5 +1,3 @@
-# Nosferatu Script
-
                               1922
 
 

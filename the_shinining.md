@@ -1,5 +1,3 @@
-# The Shining Script
-
                        "THE SHINING."
 
 

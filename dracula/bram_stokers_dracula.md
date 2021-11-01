@@ -1,5 +1,3 @@
-# Bram Stoker's Dracula Script
-
                               1992
                      BRAM STOKER'S DRACULA
                (Directed by Francis Ford Coppola)
