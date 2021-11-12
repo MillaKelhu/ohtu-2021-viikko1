@@ -23,6 +23,28 @@ class Varasto:
         else:
             self.saldo = self.tilavuus
 
+        # lisärivejä pylintin testaukseen
+        if maara == 1:
+            print("maara on 1 :)")
+        elif maara == 2:
+            print("maara on 2 :)")
+        elif maara == 3:
+            print("maara on 3 :)")
+        elif maara == 4:
+            print("maara on 4 :)")
+        elif maara == 5:
+            print("maara on 5 :)")
+        elif maara == 6:
+            print("maara on 6 :)")
+        elif maara == 7:
+            print("maara on 7 :)")
+        elif maara == 8:
+            print("maara on 8 :)")
+        elif maara == 9:
+            print("maara on 9 :)")
+        else:
+            print("Hehheh lol :)")
+
     def ota_varastosta(self, maara):
         if maara < 0:
             return 0.0
