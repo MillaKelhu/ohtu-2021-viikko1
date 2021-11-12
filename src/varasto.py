@@ -2,9 +2,8 @@ class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         self.tilavuus = max(0.0, tilavuus)
 
-        if alku_saldo < 0:
-            # virheellinen, nollataan
-            alku_saldo = 0
+        # saldo ei voi olla pienempi kuin 0
+        alku_saldo = max(alku_saldo, 0)
 
         # saldo ei voi olla isompi kuin tilavuus
         alku_saldo = min(alku_saldo, tilavuus)
@@ -22,28 +21,6 @@ class Varasto:
             self.saldo = self.saldo + maara
         else:
             self.saldo = self.tilavuus
-
-        # lisärivejä pylintin testaukseen
-        if maara == 1:
-            print("maara on 1 :)")
-        elif maara == 2:
-            print("maara on 2 :)")
-        elif maara == 3:
-            print("maara on 3 :)")
-        elif maara == 4:
-            print("maara on 4 :)")
-        elif maara == 5:
-            print("maara on 5 :)")
-        elif maara == 6:
-            print("maara on 6 :)")
-        elif maara == 7:
-            print("maara on 7 :)")
-        elif maara == 8:
-            print("maara on 8 :)")
-        elif maara == 9:
-            print("maara on 9 :)")
-        else:
-            print("Hehheh lol :)")
 
     def ota_varastosta(self, maara):
         if maara < 0:
